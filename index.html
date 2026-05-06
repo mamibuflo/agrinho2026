@@ -8,96 +8,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="header-container">
-            <h1>EcoAgroForte</h1>
-            <p>Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+
+<!-- HEADER / HERO -->
+<header class="hero" style="background-image: url('assets/img/hero.jpg');">
+    <div class="hero-text">
+        <h1>EcoAgroForte</h1>
+        <p>Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+        <a href="#sobre" class="btn">Saiba Mais</a>
+    </div>
+</header>
+
+<!-- NAV -->
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#praticas">Práticas</a></li>
+        <li><a href="#impacto">Impacto</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <div class="section-container">
+            <img src="assets/img/agricultura.jpg" alt="Agricultura moderna">
+            <div class="text">
+                <h2>Sobre o EcoAgroForte</h2>
+                <p>O EcoAgroForte é um projeto inovador que une tecnologia e sustentabilidade no campo. Nosso objetivo é promover práticas agrícolas que aumentem a produtividade, conservem o solo e a biodiversidade, e garantam alimentos de qualidade para a população.</p>
+                <p>Com ações estratégicas e conscientização ambiental, buscamos um futuro onde produção agrícola e preservação do meio ambiente caminham juntos.</p>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <!-- NAV -->
-    <nav>
+    <!-- PRÁTICAS -->
+    <section id="praticas" class="section">
+        <h2>Práticas Sustentáveis</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/img/irrigacao.jpg" alt="Irrigação inteligente">
+                <h3>Irrigação Inteligente</h3>
+                <p>Uso de sensores de umidade e irrigação por gotejamento para otimizar o uso da água, economizando recursos e aumentando a eficiência.</p>
+            </div>
+            <div class="card">
+                <img src="assets/img/reflorestamento.jpg" alt="Reflorestamento">
+                <h3>Reflorestamento</h3>
+                <p>Plantio de árvores nativas e proteção de nascentes para restaurar ecossistemas e proteger a biodiversidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACTO -->
+    <section id="impacto" class="section impact-section">
+        <h2>Impacto Esperado</h2>
         <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#praticas">Práticas Sustentáveis</a></li>
-            <li><a href="#impacto">Impacto</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li>Aumento da produtividade de forma sustentável</li>
+            <li>Preservação do solo e recursos hídricos</li>
+            <li>Redução do uso de produtos químicos prejudiciais</li>
+            <li>Conscientização ambiental da comunidade agrícola</li>
         </ul>
-    </nav>
+    </section>
 
-    <!-- MAIN -->
-    <main>
-        <!-- SOBRE -->
-        <section id="sobre" class="section">
-            <div class="text-img">
-                <img src="assets/img/natureza.jpg" alt="Natureza Sustentável">
-                <div class="text">
-                    <h2>Sobre o Projeto</h2>
-                    <p>O EcoAgroForte visa unir tecnologia, conhecimento e práticas sustentáveis para promover a produção agrícola sem prejudicar o meio ambiente. Queremos garantir alimentos de qualidade, solos saudáveis e um futuro verde para todos.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- PRÁTICAS -->
-        <section id="praticas" class="section">
-            <h2>Práticas Sustentáveis</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Irrigação Inteligente</h3>
-                    <p>Uso eficiente da água, sensores e irrigação por gotejamento para economizar recursos hídricos.</p>
-                </div>
-                <div class="card">
-                    <h3>Rotação de Culturas</h3>
-                    <p>Alternar culturas para melhorar a fertilidade do solo e reduzir pragas naturalmente.</p>
-                </div>
-                <div class="card">
-                    <h3>Redução de Agrotóxicos</h3>
-                    <p>Substituição de químicos por fertilizantes orgânicos e controle biológico de pragas.</p>
-                </div>
-                <div class="card">
-                    <h3>Reflorestamento</h3>
-                    <p>Proteção de nascentes e plantio de árvores para conservar o ecossistema local.</p>
-                </div>
-            </div>
-            <button id="btnAdicionar">Adicionar Prática</button>
-        </section>
-
-        <!-- IMPACTO -->
-        <section id="impacto" class="section impact-section">
-            <h2>Impacto Esperado</h2>
-            <ul id="impacto-lista">
-                <li>Aumento da produtividade sustentável</li>
-                <li>Redução do uso de químicos prejudiciais</li>
-                <li>Solo mais saudável e preservação ambiental</li>
-                <li>Engajamento da comunidade e conscientização ambiental</li>
-            </ul>
-        </section>
-
-        <!-- CONTATO -->
-        <section id="contato" class="section">
-            <h2>Contato</h2>
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+        <h2>Entre em Contato</h2>
+        <div class="contact-container">
+            <img src="assets/img/contato.jpg" alt="Contato">
             <form id="formContato">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
+                <input type="text" id="nome" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
+                <input type="email" id="email" required>
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
+                <textarea id="mensagem" rows="5" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
-            <p id="respostaForm"></p>
-        </section>
-    </main>
+        </div>
+        <p id="respostaForm"></p>
+    </section>
+</main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 EcoAgroForte - Produção Sustentável e Consciente</p>
-    </footer>
+<footer>
+    <p>© 2026 EcoAgroForte - Produção Sustentável e Consciente</p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

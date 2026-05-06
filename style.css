@@ -1,4 +1,150 @@
-/* Reset básico */
+Perfeito! Vamos dar um **salto grande**: criaremos um **site profissional completo**, com **design moderno, imagens reais, layout responsivo e textos bem explicativos** para o tema:
+
+**“EcoAgroForte – Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente”**
+
+Vou detalhar **estrutura de pastas, imagens sugeridas com links livres**, e **onde usar cada uma**, além de textos explicativos.
+
+---
+
+# **Projeto Profissional: EcoAgroForte**
+
+## **1. Estrutura do projeto**
+
+```
+EcoAgroForte/
+│
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+    ├── img/
+    │   ├── hero.jpg          # imagem do banner principal
+    │   ├── agricultura.jpg    # seção práticas agrícolas
+    │   ├── irrigacao.jpg      # prática de irrigação
+    │   ├── reflorestamento.jpg# prática de reflorestamento
+    │   └── contato.jpg        # imagem da seção de contato
+```
+
+> Todas as imagens são **livres**. Sugestões de bancos de imagens: [Unsplash](https://unsplash.com) ou [Pexels](https://www.pexels.com).
+
+**Links diretos sugeridos para download:**
+
+* Hero/banner principal: [https://unsplash.com/photos/TamMbr4okv4](https://unsplash.com/photos/TamMbr4okv4)
+* Agricultura moderna: [https://unsplash.com/photos/f9-M1f-Cj5M](https://unsplash.com/photos/f9-M1f-Cj5M)
+* Irrigação: [https://unsplash.com/photos/_7LbC5J-jw4](https://unsplash.com/photos/_7LbC5J-jw4)
+* Reflorestamento: [https://unsplash.com/photos/OKO-5I0cHrE](https://unsplash.com/photos/OKO-5I0cHrE)
+* Contato: [https://unsplash.com/photos/hpjSkU2UYSU](https://unsplash.com/photos/hpjSkU2UYSU)
+
+---
+
+## **2. index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAgroForte</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER / HERO -->
+<header class="hero" style="background-image: url('assets/img/hero.jpg');">
+    <div class="hero-text">
+        <h1>EcoAgroForte</h1>
+        <p>Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+        <a href="#sobre" class="btn">Saiba Mais</a>
+    </div>
+</header>
+
+<!-- NAV -->
+<nav>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#praticas">Práticas</a></li>
+        <li><a href="#impacto">Impacto</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <div class="section-container">
+            <img src="assets/img/agricultura.jpg" alt="Agricultura moderna">
+            <div class="text">
+                <h2>Sobre o EcoAgroForte</h2>
+                <p>O EcoAgroForte é um projeto inovador que une tecnologia e sustentabilidade no campo. Nosso objetivo é promover práticas agrícolas que aumentem a produtividade, conservem o solo e a biodiversidade, e garantam alimentos de qualidade para a população.</p>
+                <p>Com ações estratégicas e conscientização ambiental, buscamos um futuro onde produção agrícola e preservação do meio ambiente caminham juntos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRÁTICAS -->
+    <section id="praticas" class="section">
+        <h2>Práticas Sustentáveis</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/img/irrigacao.jpg" alt="Irrigação inteligente">
+                <h3>Irrigação Inteligente</h3>
+                <p>Uso de sensores de umidade e irrigação por gotejamento para otimizar o uso da água, economizando recursos e aumentando a eficiência.</p>
+            </div>
+            <div class="card">
+                <img src="assets/img/reflorestamento.jpg" alt="Reflorestamento">
+                <h3>Reflorestamento</h3>
+                <p>Plantio de árvores nativas e proteção de nascentes para restaurar ecossistemas e proteger a biodiversidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACTO -->
+    <section id="impacto" class="section impact-section">
+        <h2>Impacto Esperado</h2>
+        <ul>
+            <li>Aumento da produtividade de forma sustentável</li>
+            <li>Preservação do solo e recursos hídricos</li>
+            <li>Redução do uso de produtos químicos prejudiciais</li>
+            <li>Conscientização ambiental da comunidade agrícola</li>
+        </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+        <h2>Entre em Contato</h2>
+        <div class="contact-container">
+            <img src="assets/img/contato.jpg" alt="Contato">
+            <form id="formContato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <p id="respostaForm"></p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 EcoAgroForte - Produção Sustentável e Consciente</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+
+## **3. style.css (profissional e responsivo)**
+
+```css
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,26 +153,45 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f8f5;
     color: #2d4a2d;
     line-height: 1.6;
+    background-color: #f0f8f5;
 }
 
-/* HEADER */
-header {
-    background: linear-gradient(135deg, #4caf50, #81c784);
-    color: white;
+/* HEADER HERO */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 40px 20px;
+    color: white;
 }
 
-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+.hero-text h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
 }
 
-header p {
-    font-size: 1.2em;
+.hero-text p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #388e3c;
 }
 
 /* NAV */
@@ -40,16 +205,11 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
 nav ul li a {
     color: white;
+    padding: 15px 20px;
     text-decoration: none;
     font-weight: bold;
-    padding: 15px 0;
-    display: block;
 }
 
 nav ul li a:hover {
@@ -59,30 +219,24 @@ nav ul li a:hover {
 
 /* SECTIONS */
 .section {
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
-.text-img {
+.section-container {
     display: flex;
+    gap: 40px;
     align-items: center;
-    gap: 20px;
     flex-wrap: wrap;
 }
 
-.text-img img {
-    width: 300px;
+.section-container img {
+    width: 400px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
-.text-img .text {
+.text {
     max-width: 600px;
-}
-
-h2 {
-    color: #1b5e20;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 /* CARDS */
@@ -91,71 +245,33 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 20px;
 }
 
 .card {
     background-color: #e8f5e9;
-    border: 2px solid #a5d6a7;
     border-radius: 10px;
+    width: 300px;
     padding: 20px;
-    width: 250px;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-/* BUTTON */
-button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    display: block;
-    margin: 0 auto;
-    font-size: 1em;
+.card:hover
+```
+/* ANIMAÇÃO CARDS */
+.card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
 }
 
-button:hover {
-    background-color: #388e3c;
-}
-
-/* FORM */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* FOOTER */
-footer {
-    background-color: #2e7d32;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-/* IMPACTO */
-.impact-section ul {
-    list-style: square inside;
-    max-width: 600px;
-    margin: 0 auto;
+.card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
