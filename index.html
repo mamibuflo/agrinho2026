@@ -5,39 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoAgroForte</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- HEADER -->
     <header>
-        <h1>EcoAgroForte</h1>
-        <p>Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+        <div class="header-container">
+            <h1>EcoAgroForte</h1>
+            <p>Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+        </div>
     </header>
 
+    <!-- NAV -->
     <nav>
         <ul>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#praticas">Práticas Sustentáveis</a></li>
+            <li><a href="#impacto">Impacto</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
+    <!-- MAIN -->
     <main>
-        <section id="sobre">
-            <h2>Sobre o Projeto</h2>
-            <p>O EcoAgroForte busca promover práticas agrícolas sustentáveis que aumentem a produtividade sem prejudicar o meio ambiente. Nosso objetivo é unir tecnologia, educação e conscientização ambiental para garantir um futuro mais verde.</p>
+        <!-- SOBRE -->
+        <section id="sobre" class="section">
+            <div class="text-img">
+                <img src="assets/img/natureza.jpg" alt="Natureza Sustentável">
+                <div class="text">
+                    <h2>Sobre o Projeto</h2>
+                    <p>O EcoAgroForte visa unir tecnologia, conhecimento e práticas sustentáveis para promover a produção agrícola sem prejudicar o meio ambiente. Queremos garantir alimentos de qualidade, solos saudáveis e um futuro verde para todos.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="praticas">
+        <!-- PRÁTICAS -->
+        <section id="praticas" class="section">
             <h2>Práticas Sustentáveis</h2>
-            <ul id="lista-praticas">
-                <li>Uso eficiente da água e irrigação inteligente</li>
-                <li>Rotação de culturas e compostagem</li>
-                <li>Redução de agrotóxicos e fertilizantes químicos</li>
-                <li>Reflorestamento e proteção de nascentes</li>
-            </ul>
+            <div class="cards">
+                <div class="card">
+                    <h3>Irrigação Inteligente</h3>
+                    <p>Uso eficiente da água, sensores e irrigação por gotejamento para economizar recursos hídricos.</p>
+                </div>
+                <div class="card">
+                    <h3>Rotação de Culturas</h3>
+                    <p>Alternar culturas para melhorar a fertilidade do solo e reduzir pragas naturalmente.</p>
+                </div>
+                <div class="card">
+                    <h3>Redução de Agrotóxicos</h3>
+                    <p>Substituição de químicos por fertilizantes orgânicos e controle biológico de pragas.</p>
+                </div>
+                <div class="card">
+                    <h3>Reflorestamento</h3>
+                    <p>Proteção de nascentes e plantio de árvores para conservar o ecossistema local.</p>
+                </div>
+            </div>
             <button id="btnAdicionar">Adicionar Prática</button>
         </section>
 
-        <section id="contato">
+        <!-- IMPACTO -->
+        <section id="impacto" class="section impact-section">
+            <h2>Impacto Esperado</h2>
+            <ul id="impacto-lista">
+                <li>Aumento da produtividade sustentável</li>
+                <li>Redução do uso de químicos prejudiciais</li>
+                <li>Solo mais saudável e preservação ambiental</li>
+                <li>Engajamento da comunidade e conscientização ambiental</li>
+            </ul>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="section">
             <h2>Contato</h2>
             <form id="formContato">
                 <label for="nome">Nome:</label>
@@ -55,6 +93,7 @@
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 EcoAgroForte - Produção Sustentável e Consciente</p>
     </footer>
