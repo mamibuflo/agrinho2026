@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAgroForte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EcoAgroForte</h1>
+        <p>Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#praticas">Práticas Sustentáveis</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>O EcoAgroForte busca promover práticas agrícolas sustentáveis que aumentem a produtividade sem prejudicar o meio ambiente. Nosso objetivo é unir tecnologia, educação e conscientização ambiental para garantir um futuro mais verde.</p>
+        </section>
+
+        <section id="praticas">
+            <h2>Práticas Sustentáveis</h2>
+            <ul id="lista-praticas">
+                <li>Uso eficiente da água e irrigação inteligente</li>
+                <li>Rotação de culturas e compostagem</li>
+                <li>Redução de agrotóxicos e fertilizantes químicos</li>
+                <li>Reflorestamento e proteção de nascentes</li>
+            </ul>
+            <button id="btnAdicionar">Adicionar Prática</button>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="formContato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="respostaForm"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 EcoAgroForte - Produção Sustentável e Consciente</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
