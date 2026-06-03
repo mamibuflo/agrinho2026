@@ -294,3 +294,26 @@ footer {
         font-size: 0.95rem;
     }
 }
+
+/* REDES SOCIAIS */
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.redes-sociais a {
+    transition: 0.3s;
+}
+
+.redes-sociais a:hover {
+    transform: translateY(-8px) scale(1.1);
+}
+
+.redes-sociais img {
+    width: 60px;
+    height: 60px;
+}
